@@ -1,25 +1,18 @@
-import logo from './logo.svg';
+import { useId, useState, useEffect, memo } from 'react';
 import './App.css';
 
+const apiKey = process.env.REACT_APP_BING_API_KEY;
+const apiEndpoint = process.env.REACT_APP_BING_API_ENDPOINT;
+
+
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return <div className='container'>
+    <div className='rounded-container'>
+      <h3>SpellChecker</h3>
+      <hr />
+      
     </div>
-  );
+  </div>
 }
 
 export default App;
